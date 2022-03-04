@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Registration</title>
+</head>
+<body>
+
+	<h1>Registration</h1>
+
+	<form action="RegistrationAction.php" method="post">
+		<fieldset>
+		<label for="fname">First Name:</label>
+		<input type="text" name="fname" id="fname" required>
+		<br><br>
+
+		<label for="lname">last Name:</label>
+		<input type="text" name="lname" id="lname" required>
+		<br><br>
+
+		
+		<label>Gender*:</label>
+		<input type="radio" name="gender" id="male" value="male"> Male 
+		<input type="radio" name="gender" id="female" value="female"> Female
+		<br><br>
+
+		<label for="religion">Select religion:</label>
+
+		<select name="Religion" id="Religion">
+	<option value="Religion">Religion</option>
+  	<option value="Islam">Islam</option>
+  	<option value="Christian">Christianity</option>
+  	<option value="Buddhist">Buddhism</option>
+  	<option value="Hindu">Hinduism</option>
+  	<option value="Others">Others</option>
+
+		
+	</select><br><br>
+		
+		<label for="birthday">Birthday:</label>
+  		<input type="date" id="DOB" name="birthday" required>
+ 
+		 </fieldset><br>
+
+		<br><br>
+	
+		
+	<fieldset>
+	<legend>Contact Information</legend>
+
+	<label for="email">Email:*:</label>
+		<input type="text" name="email" id="email">
+		<br><br>
+
+		Present Address:<textarea name="presentadd" id="presentadd" rows="4" cols="15"></textarea required>
+	Permannent Address:<textarea name="permanentadd" id="permanentadd" rows="4" cols="15"></textarea required>
+	<br> <br>
+	
+	Phone Number:<input type="tel" id="phone" name="phone"  >
+	<br> <br>
+
+
+	<label for="Website">Personal web:</label>
+            <input type="url" id="web" name="web">
+
+	
+		</form>
+
+	<br><br>
+	
+
+	 <fieldset>
+
+	 <legend>Login Details :</legend>
+	
+	 <label for="username"> Username :</label>
+            <input type="text" name="username" id="username" maxlength="8" required>
+
+
+			<br><br>
+
+			<label for="password">Password:</label>
+			<input type="password" name="password" id="password" required>
+
+			<br><br>
+
+			<label for="confirmpass"> Confirm Password :</label>
+			<input type="password" name="confirmpass" id="confirmpass" required>
+
+			</fieldset> 
+
+	 <br><input type="submit" name="Submit">
+
+	
+
+
+</body>
+</html>
